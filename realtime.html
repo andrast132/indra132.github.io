@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="Ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>coding realtime | &copy2020bye indra</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function refresh() {
+			const textContent = document.getElementById('code-X').value;
+			document.getElementById('Hasil').srcdoc = textContent;
+		}
+	</script>
+</head>
+<body>
+	<div class="title">
+		<h2 style="color: black">coding realtime | &copy2020 indra</h2>
+	<div class="main">
+		<textarea id="code-X" onkeyup="refresh()" placeholder="code her..." ></textarea>
+		<iframe id="Hasil"></iframe>
+	</div>
+	</div>
+</body>
+</html>
